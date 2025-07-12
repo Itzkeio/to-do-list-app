@@ -2,7 +2,7 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
-import { List, CheckCircle, Clock, AlertCircle, Plus } from 'lucide-react';
+import { List, CheckCircle, Clock, ClipboardCheck, Plus } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from '@inertiajs/react';
@@ -99,7 +99,7 @@ export default function Dashboard({ stats = {
                             <CardTitle className="text-sm font-medium text-green-500">
                                 Completed Tasks
                             </CardTitle>                           
-                            <AlertCircle className="h-4 w-4 text-green-500" />
+                            <ClipboardCheck className="h-4 w-4 text-green-500" />
                         </CardHeader>                        
                         <CardContent>
                             <div className="text-2xl font-bold text-green-500">{stats.completedTasks}</div>                     
